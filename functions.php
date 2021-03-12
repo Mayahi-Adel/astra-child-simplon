@@ -21,6 +21,16 @@ add_action( 'after_setup_theme', 'astra_child_simplon_theme_setup' );
 
 function astra_child_simplon_theme_setup() {
 	load_child_theme_textdomain( 'astra-child-simplon' );
+	add_theme_support( 'editor-color-palette',
+		array(
+			array( 'name' => 'carbon', 'slug'  => 'carbon', 'color' => '#4A4A4A' ),
+			array( 'name' => 'caramelle', 'slug'  => 'caramelle', 'color' => '#8B572A' ),
+			array( 'name' => 'vanilla', 'slug'  => 'vanilla', 'color' => '#EBE5D9' ),
+			array( 'name' => 'cappuccino', 'slug'  => 'cappuccino', 'color' => '#B09F82' ),
+			array( 'name' => 'white', 'slug'  => 'white', 'color' => '#FFFFFF' ),
+			
+		)
+	);
 }
 
 // add custom section to customizer
